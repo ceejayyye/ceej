@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>tanginang coding 'to </title>
+    <style>
+        body {
+            font-family: 'Comic Sans MS', cursive, sans-serif;
+            background-color: #ffdbdb;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            overflow: hidden;
+        }
+
+        .funny-pic {
+            max-width: 300px;
+            border-radius: 20px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+            position: relative;
+            animation: float 5s infinite ease-in-out;
+            margin-right: 50px;
+        }
+
+        .cat-pic {
+            max-width: 300px;
+            border-radius: 20px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+            position: relative;
+            animation: float 5s infinite ease-in-out;
+            margin-left: 50px;
+        }
+
+        @keyframes float {
+            0%, 100% {
+                transform: translateY(0);
+            }
+            50% {
+                transform: translateY(-20px);
+            }
+        }
+
+        .card {
+            background-color: #fff;
+            padding: 40px;
+            border-radius: 20px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            position: relative;
+            z-index: 2;
+        }
+
+        h1 {
+            color: #e94f77;
+            font-size: 36px;
+            margin-bottom: 20px;
+        }
+
+        p {
+            color: #333;
+            font-size: 18px;
+            line-height: 1.5;
+            margin-bottom: 30px;
+        }
+
+        button {
+            padding: 15px 30px;
+            background-color: #e94f77;
+            color: #fff;
+            border: none;
+            border-radius: 25px;
+            font-size: 20px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        button:hover {
+            background-color: #d13254;
+        }
+    </style>
+</head>
+<body>
+   
+    <div class="card">
+        <h1>Happy Valentine's Day baby!</h1>
+      
+    
+        <p>Will you be my Valentines, Ella?</p>
+        <button onclick="propose()">yes, lodimasterbaby </button>
+        <p id="response"></p>
+        <audio controls autoplay> 
+            <source src="Close to you.mp3">
+
+
+        </audio>
+       
+            
+    
+
+
+
+
+
+
+</div>
+    <img class="cat-pic" src="https://media.giphy.com/media/JIX9t2j0ZTN9S/giphy.gif" alt="Funny Cat">
+
+    <script>
+        function propose() {
+            document.getElementById("response").innerHTML = "See you tomorrow for our date bebelabs";
+        }
+    </script>
+</body>
+</html>
+     
